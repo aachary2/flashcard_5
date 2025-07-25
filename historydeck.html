@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="darkMode.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=text_to_speech" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="getQuestion()">
+
+
+    <nav class="navbar navbar-light" style="background-color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">Quiz App</a>
+            <a class="navbar-brand" href="createDeck.html">Create own Deck</a>
+        </div>
+    </nav>
+    <div class="breadcrumbs">
+        <ul>
+            <li>
+                <a href="homepage.html">
+                    <span class="material-icons">
+                        home
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-icons">
+                        chevron_right
+                    </span>
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="historydeck.html">History Cards</a>
+            </li>
+        </ul>
+    </div>
+    <button id="darkModeToggle" class="btn btn-outline-dark">Toggle Dark Mode</button>
+
+    <h1 class="display-5">Welcome to the History Section</h1>
+    <div class="container">
+        <span class="material-symbols-outlined">text_to_speech</span>
+        <div class="question">
+            <h3>The Question</h3>
+        </div>
+        <div class="answer">
+            <h3>The Answer</h3>
+        </div>
+        <div class="card-number"></div>
+        <span id="deck-total"></span>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-sm btn-warning" id="prev">Previous Question</button>
+        <button type="button" class="btn btn-sm btn-info" id="check">Check Answer</button>
+        <button type="button" class="btn btn-sm btn-warning" id="next">Next Question</button>
+
+
+        <button type="button" class="btn btn-sm btn-warning" id="first">First Question</button>
+        <button type="button" class="btn btn-sm btn-warning" id="last">Last Question</button>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/historydeck.js"></script>
+    <script src="darkMode.js"></script>
+</body>
+
+</html>

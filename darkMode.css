@@ -1,0 +1,94 @@
+body.dark {
+    background-color: #5f036f;
+    color: #ffffff;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+body.dark .btn {
+    background-color: #bb86fc;
+    color: #000;
+    border: none;
+}
+
+body.dark footer {
+    color: #bb86fc;
+}
+
+body.dark nav.navbar {
+    background-color: #1e1e1e !important;
+}
+
+body.dark a.navbar-brand {
+    color: #bb86fc !important;
+}
+
+body.dark nav a:hover {
+    background-color: #bb86fc;
+    color: #000;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+
+body.dark .container {
+    background-color: #8c078c;
+    color: #000000;
+    box-shadow: none;
+}
+
+body.dark .containers {
+    background-color: #8c078c;
+    color: #000000;
+    box-shadow: none;
+}
+
+
+body.dark .question,
+body.dark .answer,
+body.dark .card-front,
+body.dark .hidden-div,
+body.dark .question h3,
+body.dark .answer h3,
+body.dark #deck-total,
+body.dark .deck-total,
+body.dark .card-number {
+    color: white;
+}
+
+
+body.dark #prev,
+body.dark #first,
+body.dark #view,
+body.dark #last,
+body.dark #check,
+body.dark #next,
+body.dark #colorBtn {
+    background-color: #a3090e;
+    color: #ffffff;
+    border: none;
+}
+
+
+body.dark .btn {
+    background-color: #a3090e;
+    color: #ffffff;
+    border: none;
+}
+
+body.dark a.navbar-brand {
+    color: #ffffff !important;
+}
+
+body.dark nav a:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}

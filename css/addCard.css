@@ -1,0 +1,367 @@
+.display-5 {
+  text-align: center;
+}
+
+body {
+
+  background-color: beige;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: white;
+  padding: 24px;
+  border-radius: 19px;
+  box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
+  width: 100%;
+  max-width: 460px;
+  margin: auto;
+  margin-top: 118px;
+
+
+}
+
+
+.box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+  padding: 18px 10px;
+  margin: auto;
+}
+
+
+
+.questions {
+  margin: auto;
+  margin-top: 28px;
+  text-align: center;
+  width: 45%;
+
+}
+
+
+.containers {
+  text-align: center;
+  display: none;
+  background-color: white;
+  padding: 38px;
+  border-radius: 19px;
+  box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
+  max-width: 780px;
+  margin: auto;
+  margin-top: 80px;
+
+
+
+}
+
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+
+.answers {
+  border: solid 5px green;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+  display: none;
+}
+
+.hidden-div {
+  border: solid 5px green;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.btns {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+#view {
+
+  color: white;
+  background-color: orange;
+  padding: 15px;
+  border-radius: 8px;
+
+
+}
+
+#prev {
+  color: white;
+  display: none;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+#check {
+  color: white;
+  display: none;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#next {
+
+  color: white;
+  display: none;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+#last {
+  color: white;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+#first {
+  color: white;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+#darkModeToggle {
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+
+
+
+}
+
+
+.confirm {
+
+  text-align: center;
+  background-color: beige;
+  color: #28a745;
+  width: 60%;
+  margin: auto;
+
+
+
+}
+
+.material-icons {
+  float: right;
+}
+
+
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+
+
+
+}
+
+
+
+#check {
+  color: white;
+  background-color: orange;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 780px;
+  margin: auto;
+  width: 100%;
+
+}
+
+.nav-buttons button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 9px;
+  color: white;
+  flex-grow: 1;
+  min-width: 100px;
+
+}
+
+.nav-buttons button:hover,
+.nav-buttons button:focus {
+  background-color: #5951ef !important;
+  transform: translateY(-4px);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+@media (max-width: 576px) {
+  #prev {
+    order: 1;
+    flex: 1 1 46%;
+  }
+
+  #next {
+    order: 2;
+    flex: 1 1 46%;
+  }
+
+  #check {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  #first {
+    order: 4;
+    flex: 1 1 46%;
+  }
+
+  #last {
+    order: 5;
+    flex: 1 1 46%;
+  }
+}
+
+@media (min-width: 577px) {
+
+  #prev,
+  #check,
+  #next {
+    order: initial;
+    flex: 1 1 29%;
+  }
+
+  #first,
+  #last {
+    flex: 1 1 46%;
+    max-width: 46%;
+  }
+
+
+  .breadcrumbs {
+    padding: 10px 12px;
+  }
+
+  .nav-buttons button:active,
+  .nav-buttons button:focus {
+    background-color: #5951ef !important;
+    transform: translateY(-4px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.breadcrumbs {
+
+  padding: 10px 0;
+  margin-left: 12px;
+  box-shadow: none;
+  width: auto;
+  background: transparent;
+  margin: 0;
+
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 7px;
+}
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+
+.breadcrumbs ul li a:hover {
+  color: #28a745;
+}
+
+.trash-icon {
+  color: red;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.trash-icon:hover {
+  color: darkred;
+  transform: scale(1.4);
+}
+
+button:active,
+.material-icons:active,
+.trash-icon:active {
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.speak {
+  float: left;
+  color: blue;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.speak:hover {
+  color: darkblue;
+  transform: scale(1.4);
+}
