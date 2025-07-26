@@ -99,4 +99,34 @@ speakBtn.addEventListener('click', () => {
   window.speechSynthesis.speak(new SpeechSynthesisUtterance(content));
 });
 
+const cardContainer = document.querySelector('.container');
+
+
+function triggerAnimation(className) {
+  cardContainer.classList.remove(className); 
+  void cardContainer.offsetWidth;
+  cardContainer.classList.add(className);
+  cardContainer.addEventListener('animationend', () => {
+    cardContainer.classList.remove(className);
+  }, { once: true });
+}
+
+
+document.getElementById('next').addEventListener('click', () => {
+  triggerAnimation('animate-slideright');
+
+});
+
+
+document.getElementById('prev').addEventListener('click', () => {
+  triggerAnimation('animate-slideleft');
+ 
+});
+
+
+document.getElementById('check').addEventListener('click', () => {
+  triggerAnimation('animate-check');
+
+});
+
 

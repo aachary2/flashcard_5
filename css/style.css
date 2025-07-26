@@ -137,7 +137,7 @@ button:hover {
 
 .button button {
     padding: 12px;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: 9px;
     color: white;
     flex-grow: 1;
@@ -242,6 +242,7 @@ button:hover {
 }
 
 .material-symbols-outlined {
+    font-size: 45px;
     float: left;
     color: blue;
     cursor: pointer;
@@ -252,3 +253,65 @@ button:hover {
     color: darkblue;
     transform: scale(1.4);
 }
+
+.container.animate-slideright {
+  animation: slideRight 0.5s ease;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.container.animate-slideleft {
+  animation: slideLeft 0.5s ease;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.container.animate-check {
+  animation: checkFlash 0.5s linear;
+}
+
+@keyframes checkFlash {
+  0%   { background-color: white; }
+  15%  { background-color: #b9fed9; } 
+  30%  { background-color: #ffc1b6; } 
+  45%  { background-color: #b0d7ff; }
+  60%  { background-color: #fcdda4; } 
+  75%  { background-color: #f9f9b3; }
+  90%  { background-color: #e0bfff; } 
+  100% { background-color: white; }
+}
+

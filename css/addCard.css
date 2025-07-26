@@ -26,7 +26,7 @@ body {
   border-radius: 19px;
   box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
   width: 100%;
-  max-width: 460px;
+  max-width: 600px;
   margin: auto;
   margin-top: 118px;
 
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 460px;
+  max-width: 600px;
   padding: 18px 10px;
   margin: auto;
 }
@@ -184,6 +184,7 @@ body {
 }
 
 .material-icons {
+  font-size: 22px;
   float: right;
 }
 
@@ -207,7 +208,7 @@ body {
   background-color: orange;
   padding: 12px 20px;
   border-radius: 15px;
-  font-size: 1rem;
+  font-size: 2rem;
 
 }
 
@@ -216,7 +217,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  max-width: 780px;
+  max-width: 1000px;
   margin: auto;
   width: 100%;
 
@@ -224,7 +225,7 @@ body {
 
 .nav-buttons button {
   padding: 12px;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 9px;
   color: white;
   flex-grow: 1;
@@ -328,7 +329,6 @@ body {
 
 .material-icons {
   vertical-align: middle;
-  font-size: 22px;
 }
 
 
@@ -337,6 +337,7 @@ body {
 }
 
 .trash-icon {
+  font-size: 45px;
   color: red;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -355,6 +356,7 @@ button:active,
 }
 
 .speak {
+  font-size: 45px; 
   float: left;
   color: blue;
   cursor: pointer;
@@ -364,4 +366,78 @@ button:active,
 .speak:hover {
   color: darkblue;
   transform: scale(1.4);
+}
+
+#new {
+  font-size: 60px;
+  padding: 10px 20px; 
+  width: 500px;       
+  height: 130px;     
+ 
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.containers.animate-slideright {
+  animation: slideRight 0.5s ease;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.containers.animate-slideleft {
+  animation: slideLeft 0.5s ease;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.containers.animate-check {
+  animation: checkFlash 0.5s linear;
+}
+
+@keyframes checkFlash {
+  0%   { background-color: white; }
+  15%  { background-color: #b9fed9; } 
+  30%  { background-color: #ffc1b6; } 
+  45%  { background-color: #b0d7ff; }
+  60%  { background-color: #fcdda4; } 
+  75%  { background-color: #f9f9b3; }
+  90%  { background-color: #e0bfff; } 
+  100% { background-color: white; }
 }

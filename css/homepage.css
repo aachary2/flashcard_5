@@ -51,3 +51,42 @@ footer {
     border-radius: 5px;
 
 }
+
+.container.animate-slide {
+  animation: slideOutIn 0.5s ease;
+}
+
+@keyframes slideOutIn {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.container.animate-check {
+  animation: checkFlash 4s linear;
+}
+
+@keyframes checkFlash {
+  0%   { background-color: white; }
+  15%  { background-color: #fc00ca; } 
+  30%  { background-color: #FF6347; } 
+  45%  { background-color: #1E90FF; }
+  60%  { background-color: #FFA500; } 
+  75%  { background-color: #FFFF00; }
+  90%  { background-color: #8A2BE2; } 
+  100% { background-color: white; }
+}
