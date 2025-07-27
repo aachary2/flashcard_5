@@ -157,7 +157,7 @@ button:hover {
 
 .button button:hover,
 .button button:focus {
-    background-color: #5951ef !important;
+    background-color: #008000 !important;
     transform: translateY(-4px);
     transition: all 0.3s ease-in-out;
 }
