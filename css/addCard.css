@@ -167,11 +167,10 @@ body {
 }
 
 #darkModeToggle {
-  color: gray;
+  color: white;
+  background-color: orange;
   padding: 10px;
   border-radius: 5px;
-
-
 
 }
 
@@ -325,11 +324,15 @@ body {
 
 .breadcrumbs ul li a {
   text-decoration: none;
-  color: #000;
+  color: white;
   display: flex;
   align-items: center;
   margin-left: 0;
   padding: 0;
+}
+
+h1 {
+  color: white;
 }
 
 .material-icons {
@@ -374,10 +377,13 @@ button:active,
 }
 
 #new {
-  font-size: 60px;
-  padding: 10px 20px;
-  width: 500px;
-  height: 130px;
+  background-color: orange;
+  font-size: 25px;
+  padding: 10px 22px;
+  width: auto;
+  max-width: 100%;
+  min-width: 320px;
+  height: 80px;
 
   display: inline-flex;
   justify-content: center;
