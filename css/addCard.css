@@ -117,8 +117,10 @@ body {
 
   color: white;
   background-color: orange;
-  padding: 15px;
-  border-radius: 8px;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
 
 
 }
