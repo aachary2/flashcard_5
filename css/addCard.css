@@ -180,7 +180,8 @@ body {
 .confirm {
 
   text-align: center;
-  background-color: beige;
+  font-size: 22px;
+  background-color: #0047AB;
   color: #28a745;
   width: 60%;
   margin: auto;
