@@ -4,9 +4,19 @@
 }
 
 body {
-    background-color: #FFFFF0;
+    background-color: #0047AB;
     min-height: 100vh;
     font-family: "Ancizar Sans", sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+#logos {
+
+    width: 115px;
+    height: auto;
 }
 
 .display-5 {
@@ -255,63 +265,92 @@ button:hover {
 }
 
 .container.animate-slideright {
-  animation: slideRight 0.5s ease;
+    animation: slideRight 0.5s ease;
 }
 
 @keyframes slideRight {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  40% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
 .container.animate-slideleft {
-  animation: slideLeft 0.5s ease;
+    animation: slideLeft 0.5s ease;
 }
 
 @keyframes slideLeft {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  40% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
 .container.animate-check {
-  animation: checkFlash 0.5s linear;
+    animation: checkFlash 0.5s linear;
 }
 
 @keyframes checkFlash {
-  0%   { background-color: white; }
-  15%  { background-color: #b9fed9; } 
-  30%  { background-color: #ffc1b6; } 
-  45%  { background-color: #b0d7ff; }
-  60%  { background-color: #fcdda4; } 
-  75%  { background-color: #f9f9b3; }
-  90%  { background-color: #e0bfff; } 
-  100% { background-color: white; }
-}
+    0% {
+        background-color: white;
+    }
 
+    15% {
+        background-color: #b9fed9;
+    }
+
+    30% {
+        background-color: #ffc1b6;
+    }
+
+    45% {
+        background-color: #b0d7ff;
+    }
+
+    60% {
+        background-color: #fcdda4;
+    }
+
+    75% {
+        background-color: #f9f9b3;
+    }
+
+    90% {
+        background-color: #e0bfff;
+    }
+
+    100% {
+        background-color: white;
+    }
+}

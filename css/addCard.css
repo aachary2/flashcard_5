@@ -3,8 +3,7 @@
 }
 
 body {
-
-  background-color: beige;
+  background-color: #0047AB;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -31,6 +30,12 @@ body {
   margin-top: 118px;
 
 
+}
+
+#logos {
+
+  width: 140px;
+  height: auto;
 }
 
 
@@ -356,7 +361,7 @@ button:active,
 }
 
 .speak {
-  font-size: 45px; 
+  font-size: 45px;
   float: left;
   color: blue;
   cursor: pointer;
@@ -370,11 +375,11 @@ button:active,
 
 #new {
   font-size: 60px;
-  padding: 10px 20px; 
-  width: 500px;       
-  height: 130px;     
- 
-  display: inline-flex; 
+  padding: 10px 20px;
+  width: 500px;
+  height: 130px;
+
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -388,14 +393,17 @@ button:active,
     transform: translateX(0);
     opacity: 1;
   }
+
   40% {
     transform: translateX(100%);
     opacity: 0;
   }
+
   60% {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -412,14 +420,17 @@ button:active,
     transform: translateX(0);
     opacity: 1;
   }
+
   40% {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   60% {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -432,12 +443,35 @@ button:active,
 }
 
 @keyframes checkFlash {
-  0%   { background-color: white; }
-  15%  { background-color: #b9fed9; } 
-  30%  { background-color: #ffc1b6; } 
-  45%  { background-color: #b0d7ff; }
-  60%  { background-color: #fcdda4; } 
-  75%  { background-color: #f9f9b3; }
-  90%  { background-color: #e0bfff; } 
-  100% { background-color: white; }
+  0% {
+    background-color: white;
+  }
+
+  15% {
+    background-color: #b9fed9;
+  }
+
+  30% {
+    background-color: #ffc1b6;
+  }
+
+  45% {
+    background-color: #b0d7ff;
+  }
+
+  60% {
+    background-color: #fcdda4;
+  }
+
+  75% {
+    background-color: #f9f9b3;
+  }
+
+  90% {
+    background-color: #e0bfff;
+  }
+
+  100% {
+    background-color: white;
+  }
 }

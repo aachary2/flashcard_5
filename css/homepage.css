@@ -1,54 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
 }
 
 body {
-    background-color: #FFFFF0;
-    min-height: 100vh;
+  background-color: #0047AB;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
 }
 
 nav a:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 nav li:first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .card-img-top {
-    border-radius: 30px;
-    max-width: 360px;
-    margin: auto;
-    height: 251px;
+  border-radius: 30px;
+  max-width: 360px;
+  margin: auto;
+  height: 251px;
 
 
 
 }
 
+#logos {
+
+  width: 140px;
+  height: auto;
+}
+
+
 .card {
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .card-body {
-    padding: 25px;
-    margin-top: -16px;
+  padding: 25px;
+  margin-top: -16px;
 }
 
 .card-text {
-    text-align: left;
+  text-align: left;
 }
 
 footer {
-    color: blue;
+  color: blue;
 }
 
 #darkModeToggle {
-    color: gray;
-    padding: 10px;
-    border-radius: 5px;
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
 
 }
 
@@ -61,14 +73,17 @@ footer {
     transform: translateX(0);
     opacity: 1;
   }
+
   40% {
     transform: translateX(100%);
     opacity: 0;
   }
+
   60% {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -81,12 +96,35 @@ footer {
 }
 
 @keyframes checkFlash {
-  0%   { background-color: white; }
-  15%  { background-color: #fc00ca; } 
-  30%  { background-color: #FF6347; } 
-  45%  { background-color: #1E90FF; }
-  60%  { background-color: #FFA500; } 
-  75%  { background-color: #FFFF00; }
-  90%  { background-color: #8A2BE2; } 
-  100% { background-color: white; }
+  0% {
+    background-color: white;
+  }
+
+  15% {
+    background-color: #fc00ca;
+  }
+
+  30% {
+    background-color: #FF6347;
+  }
+
+  45% {
+    background-color: #1E90FF;
+  }
+
+  60% {
+    background-color: #FFA500;
+  }
+
+  75% {
+    background-color: #FFFF00;
+  }
+
+  90% {
+    background-color: #8A2BE2;
+  }
+
+  100% {
+    background-color: white;
+  }
 }
