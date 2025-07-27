@@ -134,6 +134,10 @@ button:hover {
 
 }
 
+.back-sym {
+    color: white;
+}
+
 .button {
     display: flex;
     flex-wrap: wrap;
@@ -251,7 +255,7 @@ button:hover {
     color: #28a745;
 }
 
-.material-symbols-outlined {
+.text-icon {
     font-size: 45px;
     float: left;
     color: blue;
@@ -259,7 +263,7 @@ button:hover {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.material-symbols-outlined:hover {
+.text-icon:hover {
     color: darkblue;
     transform: scale(1.4);
 }
