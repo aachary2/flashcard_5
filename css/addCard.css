@@ -307,11 +307,12 @@ body {
 .breadcrumbs {
 
   padding: 10px 0;
+  font-size: 22px;
   margin-left: 12px;
   box-shadow: none;
   width: auto;
   background: transparent;
-  margin: 0;
+  margin: 2px 0;
 
 }
 
