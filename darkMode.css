@@ -60,7 +60,8 @@ body.dark .question h3,
 body.dark .answer h3,
 body.dark #deck-total,
 body.dark .deck-total,
-body.dark .card-number {
+body.dark .card-number,
+body.dark h1 {
     color: white;
 }
 
@@ -71,7 +72,9 @@ body.dark #view,
 body.dark #last,
 body.dark #check,
 body.dark #next,
-body.dark #colorBtn {
+body.dark #colorBtn,
+body.dark #darkModeToggle,
+body.dark #new {
     background-color: #a3090e;
     color: #ffffff;
     border: none;

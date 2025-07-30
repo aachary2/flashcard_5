@@ -304,6 +304,10 @@ body {
     padding: 10px 12px;
   }
 
+  #buttonbar {
+    padding: 10px 12px;
+  }
+
   .nav-buttons button:active,
   .nav-buttons button:focus {
     background-color: #008000 !important;

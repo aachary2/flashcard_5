@@ -56,6 +56,10 @@ footer {
   color: white;
 }
 
+.darkmodes {
+  display: flex;
+  justify-content: flex-end;
+}
 
 #darkModeToggle {
   color: white;
