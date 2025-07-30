@@ -12,7 +12,7 @@ const errorMessage = document.getElementById("error");
 const confirms = document.getElementById("confirm");
 const lastQuestion = document.querySelector('#last');
 const firstQuestion = document.querySelector('#first');
-
+const newCard = document.querySelector("#new");
 let data = sessionStorage.getItem("card");
 if (data) {
   data = JSON.parse(data);
@@ -76,6 +76,7 @@ function create() {
 }
 
 function createCards() {
+
   box_container.style.display = "none";
   containers.style.display = "block";
   nextButton.style.display = "inline-block";
@@ -84,6 +85,7 @@ function createCards() {
   lastQuestion.style.display = "inline-block";
   buttons.style.display = "inline-block";
   view.style.display = "none";
+  newCard.style.display = "inline-block";
   containers.innerHTML = "";
   cards = [];
 
@@ -274,6 +276,7 @@ if (data.length > 0) {
   view.style.display = "flex";
   firstQuestion.style.display = 'none';
   lastQuestion.style.display = 'none';
+
 }
 
 lastQuestion.addEventListener('click', function () {
@@ -360,8 +363,8 @@ const cardContainer = document.querySelector('.containers');
 
 
 function triggerAnimation(className) {
-  cardContainer.classList.remove(className); 
-  void cardContainer.offsetWidth; 
+  cardContainer.classList.remove(className);
+  void cardContainer.offsetWidth;
   cardContainer.classList.add(className);
   cardContainer.addEventListener('animationend', () => {
     cardContainer.classList.remove(className);
@@ -371,17 +374,17 @@ function triggerAnimation(className) {
 
 document.getElementById('next').addEventListener('click', () => {
   triggerAnimation('animate-slideright');
- 
+
 });
 
 
 document.getElementById('prev').addEventListener('click', () => {
   triggerAnimation('animate-slideleft');
- 
+
 });
 
 
 document.getElementById('check').addEventListener('click', () => {
   triggerAnimation('animate-check');
-  
+
 });

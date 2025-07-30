@@ -67,8 +67,8 @@ body {
   background-color: white;
   padding: 38px;
   border-radius: 19px;
-  box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
-  max-width: 780px;
+  max-width: 950px;
+  height: auto;
   margin: auto;
   margin-top: 80px;
 
@@ -168,11 +168,19 @@ body {
 
 }
 
+.button-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #darkModeToggle {
   color: white;
   background-color: orange;
-  padding: 10px;
+  padding: 12px 22px;
   border-radius: 5px;
+  cursor: pointer;
+
 
 }
 
@@ -389,7 +397,7 @@ button:active,
   min-width: 320px;
   height: 80px;
 
-  display: inline-flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
